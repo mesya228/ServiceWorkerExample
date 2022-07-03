@@ -1,0 +1,31 @@
+{
+  "name": "Manifest app",
+  "short_name": "Mfst app",
+  "default_locale": "ua",
+  "description": "Test manifest",
+  "manifest_version": 2,
+  "version": "0.1",
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#000",
+  "orientation": "portrait-primary",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "icon": "assets/icon.png"
+    },
+    "default_title": "Manifest action",
+    "default_popup": "popup/popup.html"
+  },
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
